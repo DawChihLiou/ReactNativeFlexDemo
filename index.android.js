@@ -12,61 +12,29 @@ import React, {
 } from 'react-native';
 
 import Box from './Box';
+import styles from './styles';
 
 class ReactNativeFlexDemo extends Component {
   render() {
     return (
       <View style={styles.container}>
         <View style={styles.row}>
-          <Box style={styles.lgBox} text="text"/>
-          <Box style={styles.mdBox} />
-          <Box style={styles.smBox} />
-          <Box style={styles.lgBox} />
-          <Box style={styles.smBox} />
-          <Box style={styles.mdBox} />
-          <Box style={styles.lgBox} />
+          <Box style={ [styles.Box, styles.lgBox] } text="NATIVE" />
+          <Box style={ [styles.Box, styles.mdBox] } text="AWESOME" />
+          <Box style={ [styles.Box, styles.smBox] } text="REACT" />
+          <Box style={ [styles.Box, styles.lgBox] } text="NATIVE" />
+          <Box style={ [styles.Box, styles.smBox] } text="REACT" />
         </View>
         <View style={styles.row}>
-          <Box style={styles.mdBox} />
-          <Box style={styles.lgBox} />
-          <Box style={styles.smBox} />
-          <Box style={styles.mdBox} />
-          <Box style={styles.smBox} />
-          <Box style={styles.mdBox} />
-          <Box style={styles.lgBox} />
-          <Box style={styles.mdBox} />
+          <Box style={ [styles.Box, styles.mdBox] } text="AWESOME" />
+          <Box style={ [styles.Box, styles.smBox] } text="REACT" />
+          <Box style={ [styles.Box, styles.lgBox] } text="NATIVE" />
+          <Box style={ [styles.Box, styles.smBox] } text="REACT" />
+          <Box style={ [styles.Box, styles.mdBox] } text="AWESOME" />
         </View>
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    // justifyContent: 'center',
-    // alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  row: {
-    flex: 1,
-    flexDirection: 'row',
-  },
-  smBox: {
-    flex: 1,
-    backgroundColor: '#3498db',
-  },
-  mdBox: {
-    flex: 2,
-    backgroundColor: '#f1c40f',
-  },
-  lgBox: {
-    flex: 3,
-    backgroundColor: '#34495e',
-  },
-  text: {
-    color: '#fff',
-  },
-});
 
 AppRegistry.registerComponent('ReactNativeFlexDemo', () => ReactNativeFlexDemo);
