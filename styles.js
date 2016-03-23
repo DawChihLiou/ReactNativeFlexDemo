@@ -13,10 +13,13 @@ const styles = StyleSheet.create({
   row: {
     flex: 1,
     flexDirection: 'row',
+    // flexDirection: 'column',
   },
   Box: {
     justifyContent: 'center',
+    // justifyContent: 'flex-end',
     alignItems: 'center',
+    // alignItems: 'flex-start',
   },
   smBox: {
     flex: 1,
@@ -24,7 +27,7 @@ const styles = StyleSheet.create({
   },
   mdBox: {
     flex: 2,
-    backgroundColor: '#f1c40f',
+    backgroundColor: '#f39c12',
   },
   lgBox: {
     flex: 3,
