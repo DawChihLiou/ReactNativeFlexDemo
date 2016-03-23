@@ -11,19 +11,31 @@ import React, {
   View
 } from 'react-native';
 
+import Box from './Box';
+
 class ReactNativeFlexDemo extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Shake or press menu button for dev menu
-        </Text>
+        <View style={styles.row}>
+          <Box style={styles.lgBox} text="text"/>
+          <Box style={styles.mdBox} />
+          <Box style={styles.smBox} />
+          <Box style={styles.lgBox} />
+          <Box style={styles.smBox} />
+          <Box style={styles.mdBox} />
+          <Box style={styles.lgBox} />
+        </View>
+        <View style={styles.row}>
+          <Box style={styles.mdBox} />
+          <Box style={styles.lgBox} />
+          <Box style={styles.smBox} />
+          <Box style={styles.mdBox} />
+          <Box style={styles.smBox} />
+          <Box style={styles.mdBox} />
+          <Box style={styles.lgBox} />
+          <Box style={styles.mdBox} />
+        </View>
       </View>
     );
   }
@@ -32,19 +44,28 @@ class ReactNativeFlexDemo extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  row: {
+    flex: 1,
+    flexDirection: 'row',
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  smBox: {
+    flex: 1,
+    backgroundColor: '#3498db',
+  },
+  mdBox: {
+    flex: 2,
+    backgroundColor: '#f1c40f',
+  },
+  lgBox: {
+    flex: 3,
+    backgroundColor: '#34495e',
+  },
+  text: {
+    color: '#fff',
   },
 });
 
