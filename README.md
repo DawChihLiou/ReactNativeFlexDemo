@@ -10,12 +10,7 @@ Building native applications tend to have longer development cycles due to the f
 The CSS3 Flexible Box, or Flexbox, is a layout system that provides a predictable way of arranging elements on a page even with changes of screen size. React Native offers various of [Flexbox props](https://facebook.github.io/react-native/docs/flexbox.html) which handles a wide range of cases in layouts in a simple way.
 
 ### How The Demo Works
-Clone the project and run
-`npm install`
-to install all the dependencies. Once you are done, execute
-`react-native run-ios`
-for iOS simulation or
-`react-native run-android`
-for Android.
+Clone the project and run `npm install`
+to install all the dependencies. Once you are done, execute `react-native run-ios` for iOS simulation or `react-native run-android` for Android.
 
 On startup, you will see two rows of sections with colors that indicate the size of the section. You can open `styles.js` and start experiment with the styles and flex props. Live reload should happen right when you save your changes. If not, press `cmd+D` and enable the Live Reload option.
