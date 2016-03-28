@@ -1,5 +1,8 @@
 # ReactNativeFlexDemo
 
+### Purpose
+Simple demonstration of React Native's approach of styling and review changes with Live Reload. 
+
 ### What is it
 React Native Flex Demo is a simple example of how to use Flexbox for React Native development.
 
