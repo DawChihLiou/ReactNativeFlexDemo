@@ -11,6 +11,6 @@ The CSS3 Flexible Box, or Flexbox, is a layout system that provides a predictabl
 
 ### How The Demo Works
 Clone the project and run `npm install`
-to install all the dependencies. Once you are done, execute `react-native run-ios` for iOS simulation or `react-native run-android` for Android.
+to install all the dependencies. Once you are done installing, execute `react-native run-ios` for iOS simulation or `react-native run-android` for Android.
 
-On startup, you will see two rows of sections with colors that indicate the size of the section. You can open `styles.js` and start experiment with the styles and flex props. Live reload should happen right when you save your changes. If not, press `cmd+D` and enable the Live Reload option.
+On startup, you will see two rows of sections with colors that indicate the size of the sections. You can open `styles.js` and start experiment with the styles and flex props. Live reload should happen right when you save your changes. If not, press `cmd+D` and enable the Live Reload option.
