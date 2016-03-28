@@ -17,9 +17,9 @@ const styles = StyleSheet.create({
   },
   Box: {
     justifyContent: 'center',
-    // justifyContent: 'flex-end',
+    // justifyContent: 'flex-start',
     alignItems: 'center',
-    // alignItems: 'flex-start',
+    // alignItems: 'flex-end',
   },
   smBox: {
     flex: 1,
